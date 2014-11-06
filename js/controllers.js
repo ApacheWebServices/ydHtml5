@@ -5,6 +5,14 @@
 angular.module('myApp.controllers', [])
   .controller('HomeCtrl', ['$scope', function($scope) {
 
+        // Needed for the loading screen
+        $rootScope.$on('$routeChangeStart', function(){
+            $rootScope.loading = true;
+        });
+
+        $rootScope.$on('$routeChangeSuccess', function(){
+            $rootScope.loading = false;
+        });
   }])
   .controller('ArticlesCtrl', ['$scope', '$http', function($scope, $http) {
   	$scope.loading = true;
