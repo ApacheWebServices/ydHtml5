@@ -1,0 +1,11 @@
+<div class="scrollable">
+    <h1 class="scrollable-header app-name">YouDespatch 1.0<small>beta</small></h1>
+    <div class="scrollable-content">
+        <div class="list-group"  ui-turn-off='sidebarLeft'>
+            <a class="list-group-item" href="#/">Home <i class="fa fa-chevron-right pull-right"></i></a>
+            <a ng-show="!user.authenticated" class="list-group-item" href="#/login" menu-item>Log In</a>
+            <a ng-show="!user.authenticated" class="list-group-item" href="#/signup" menu-item>Sign Up</a></li>
+            <a ng-show="user.authenticated" class="list-group-item" href="" ua-logout>Log Out</a></li>
+        </div>
+    </div>
+</div>
