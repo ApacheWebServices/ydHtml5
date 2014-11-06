@@ -1,9 +1,5 @@
 /* app css stylesheet */
 
-body {
-  padding: 20px 0;
-}
-
 .form {
   max-width: 330px;
   padding: 15px;
@@ -94,3 +90,6 @@ body {
   background: #1671AC;
   color: white;
 }
+
+.app-content {background-color: #fff; }
+.rightbar-content{ background-color: #fff; }

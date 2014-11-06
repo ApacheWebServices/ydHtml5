@@ -3,11 +3,14 @@
 // Declare app level module which depends on filters, and services
 angular.module('myApp', [
   'ngRoute',
+  'ngTouch',
   'myApp.filters',
   'myApp.services',
   'myApp.directives',
   'myApp.controllers',
-  'UserApp'
+  'UserApp',
+  'mobile-angular-ui',
+  'mobile-angular-ui.drag'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {templateUrl: 'partials/home.html', controller: 'HomeCtrl'});
